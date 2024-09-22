@@ -1,0 +1,31 @@
+# 线上配置文件
+# @author <a href="https://github.com/liyupi">程序员鱼皮</a>
+# @from <a href="https://yupi.icu">编程导航知识星球</a>
+server:
+  port: 8101
+spring:
+  # 数据库配置
+  # todo 需替换配置
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://8.130.53.38:3306/yudada?useSSL=false #TODO 上线需要该为上线ip
+    username: yudada  #TODO 使用prod/test配置文件 上线需要该为上线的数据库的名称并且注释掉application.yml文件相同代码
+    password: KA8RWPeLX4jfDA3J  #TODO 使用prod/test配置文件 上线需要该为上线的数据库的密码并且注释掉application.yml文件相同代码
+  # Redis 配置
+  # todo 需替换配置
+  redis:
+    database: 1
+    host: 8.130.53.38 #TODO 上线需要该为上线ip
+    port: 6379
+    timeout: 5000
+    password: 97bc22b54b49d848  #TODO 使用prod/test配置文件 上线需要该为上线的redis的密码并且注释掉application.yml文件相同代码
+mybatis-plus:
+  configuration:
+    # 生产环境关闭日志
+    log-impl: ''
+# 接口文档配置
+knife4j:
+  basic:
+    enable: true
+    username: root
+    password: 123456

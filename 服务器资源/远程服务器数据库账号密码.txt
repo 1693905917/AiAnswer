@@ -1,0 +1,11 @@
+账号：root
+密码：KA8RWPeLX4jfDA3J
+
+yudada数据库：
+账号：yudada
+密码：KA8RWPeLX4jfDA3J
+
+
+redis:
+账号：
+密码：97bc22b54b49d848
